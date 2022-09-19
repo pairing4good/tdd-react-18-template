@@ -13,6 +13,7 @@ nvm install node
 npx create-react-app tdd-amplify-react
 
 ## Set Up ESLint
+https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b
 
 - npm install eslint --save-dev
 - npx eslint --init
@@ -27,3 +28,8 @@ npx create-react-app tdd-amplify-react
 ✔ What format do you want your config file to be in? · JSON
 ✔ Would you like to install them now? · Yes
 ✔ Which package manager do you want to use? · npm
+
+## Set Up Prettier
+https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b
+
+- npm install eslint-config-prettier eslint-plugin-prettier prettier --save-dev
