@@ -1,15 +1,19 @@
 ## Install NVM
+
 https://github.com/nvm-sh/nvm
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 ## Install Node
+
 nvm install node
 
 ## Create React App
+
 npx create-react-app tdd-amplify-react
 
 ## Set Up ESLint
+
 - npm install eslint --save-dev
 - npx eslint --init
 
@@ -23,4 +27,3 @@ npx create-react-app tdd-amplify-react
 ✔ What format do you want your config file to be in? · JSON
 ✔ Would you like to install them now? · Yes
 ✔ Which package manager do you want to use? · npm
-
