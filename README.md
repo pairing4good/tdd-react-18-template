@@ -33,3 +33,7 @@ https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b
 https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b
 
 - npm install eslint-config-prettier eslint-plugin-prettier prettier --save-dev
+
+## Prevent committing credential
+- npm install secretlint @secretlint/secretlint-rule-preset-recommend --save-dev
+- npx secretlint --init
