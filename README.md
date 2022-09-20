@@ -44,3 +44,7 @@ https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b
 ## Promise linting
 
 - npm install eslint-plugin-promise --save-dev
+
+## Jest Linting
+
+- eslint-plugin-jest
