@@ -22,7 +22,7 @@
     "lint": "eslint . --ext js,jsx",
     "lint:fix": "eslint . --ext js,jsx --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
-    "secret-check": "npx secretlint '**/*'"
+    "secretlint": "npx secretlint '**/*'"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +48,7 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-promise": "^6.0.1",
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.6.0",
     "secretlint": "^5.2.4"

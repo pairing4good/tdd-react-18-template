@@ -37,3 +37,7 @@ https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b
 ## Prevent committing credential
 - npm install secretlint @secretlint/secretlint-rule-preset-recommend --save-dev
 - npx secretlint --init
+
+## Promise linting
+- npm install eslint-plugin-promise --save-dev
+
