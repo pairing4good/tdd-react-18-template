@@ -30,21 +30,14 @@ https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b
 ✔ Would you like to install them now? · Yes
 ✔ Which package manager do you want to use? · npm
 
-## Set Up Prettier
-
-https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b
+## Set Up Linting Rules
 
 - npm install eslint-config-prettier eslint-plugin-prettier prettier --save-dev
+- npm install eslint-plugin-promise --save-dev
+- npm install eslint-plugin-jest --save-dev
+- npm install eslint-plugin-react-hooks --save-dev
 
 ## Prevent committing credential
 
 - npm install secretlint @secretlint/secretlint-rule-preset-recommend --save-dev
 - npx secretlint --init
-
-## Promise linting
-
-- npm install eslint-plugin-promise --save-dev
-
-## Jest Linting
-
-- eslint-plugin-jest
