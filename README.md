@@ -13,6 +13,7 @@ nvm install node
 npx create-react-app tdd-amplify-react
 
 ## Set Up ESLint
+
 https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b
 
 - npm install eslint --save-dev
@@ -30,14 +31,16 @@ https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b
 ✔ Which package manager do you want to use? · npm
 
 ## Set Up Prettier
+
 https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b
 
 - npm install eslint-config-prettier eslint-plugin-prettier prettier --save-dev
 
 ## Prevent committing credential
+
 - npm install secretlint @secretlint/secretlint-rule-preset-recommend --save-dev
 - npx secretlint --init
 
 ## Promise linting
-- npm install eslint-plugin-promise --save-dev
 
+- npm install eslint-plugin-promise --save-dev
