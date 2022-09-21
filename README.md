@@ -1,6 +1,6 @@
-![codeql-analysis](https://github.com/pairing4good/react-18-project-template/actions/workflows/codeql-analysis.yml/badge.svg)
+![Security Checks](https://github.com/pairing4good/react-18-project-template/actions/workflows/codeql-analysis.yml/badge.svg)
 
-![node.js](https://github.com/pairing4good/react-18-project-template/actions/workflows/node.js.yml/badge.svg)
+![Test Automation](https://github.com/pairing4good/react-18-project-template/actions/workflows/node.js.yml/badge.svg)
 
 ## Install NVM
 
