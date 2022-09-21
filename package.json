@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
+    "better-npm-audit": "^3.7.3",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
@@ -24,6 +25,7 @@
     "lint:fix": "eslint . --ext js,jsx --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "secretlint": "npx secretlint '**/*'",
+    "audit": "better-npm-audit audit -p",
     "prepare": "husky install"
   },
   "eslintConfig": {
