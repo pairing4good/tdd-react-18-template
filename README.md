@@ -33,7 +33,7 @@ The `npm audit` command checks the dependencies configured in `package.json` for
 
 ### Reformatting Code
 
-[ESLint](https://eslint.org/)'s auto fix command reformats your files to fit the configured [ESLint](https://eslint.org/) rules. Beyond linting [Prettier](https://prettier.io/) provides configurable coding styles. [Prettier](https://prettier.io/) rules are configured in the `.prettierrc` file at the root of this repository. By running the command `npm run format` the code files will be rewritten to fit the configured coding styles. It's important that teams have clear coding standards and libraries like [Prettier](https://prettier.io/) can help teams configure and adhere to their own standards.
+[ESLint](https://eslint.org/)'s auto fix command reformats your files to fit the configured [ESLint](https://eslint.org/) rules. Beyond linting [Prettier](https://prettier.io/) provides configurable coding styles. [Prettier](https://prettier.io/) rules are configured in the `.prettierrc` file at the root of this repository. By running the command `npm run lint:fix` the [Prettier](https://prettier.io/) rules will be included in the [ESLint](https://eslint.org/) formatting rules. It's important that teams have clear coding standards and libraries like [Prettier](https://prettier.io/) can help teams configure and adhere to their own standards.
 
 ## Code Coverage
 
@@ -58,6 +58,9 @@ Before each commit [Husky](https://typicode.github.io/husky) runs 5 commands:
 3. `npm run lint` - checks the code against all of the linting rules
 4. `npm run secretlint` - checks for secrets within the code
 5. `npm run audit` - checks for package vulnerabilites
+
+## VS Code Plugins
+
 
 # Initial Template Creation Steps
 
