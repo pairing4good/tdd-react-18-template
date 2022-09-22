@@ -21,6 +21,8 @@ At the bottom of the `.eslintrc.json` file `"react/react-in-jsx-scope": "off"` i
 
 To run [ESLint](https://eslint.org/) run the command `npm run lint`. [ESLint](https://eslint.org/) can automatically fix problems by running `npm run lint:fix`.
 
+If you are using [VSCode](https://code.visualstudio.com/) adding the ESLint (dbaeumer.vscode-eslint) plugin provides live feedback as you are writing code.  Faster feedback loops help team members learn team style guidelines faster and avoid delays while committing.
+
 ### Credentials Check
 
 It's all too common for developers to accidentally commit usernames and or passwords int their repository. This can lead to significant security vulnerabilities and even lead to security breaches. [Secretlint](https://github.com/secretlint/secretlint) is a Pluggable linting tool that prevents developers from committing their credentials. [Secretlint](https://github.com/secretlint/secretlint) is configured in the `.secretlintrc.json` file at the root of this repository.
@@ -58,9 +60,6 @@ Before each commit [Husky](https://typicode.github.io/husky) runs 5 commands:
 3. `npm run lint` - checks the code against all of the linting rules
 4. `npm run secretlint` - checks for secrets within the code
 5. `npm run audit` - checks for package vulnerabilites
-
-## VS Code Plugins
-
 
 # Initial Template Creation Steps
 
