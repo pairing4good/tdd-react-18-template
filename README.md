@@ -4,7 +4,7 @@
 
 ## Approach
 
-This starter template standardizes coding standards, industry best practices and detects security vulnerabilities before code is committed to git. This provides fast automated testing feedback loops so teams can focus on solving problems.
+This starter template bootstraps your repository with: recommended coding standards, industry best practices and it also detects security vulnerabilities before code is committed to git. This template provides fast automated testing feedback loops so teams can focus on solving problems.
 
 ### Code Analysis
 
