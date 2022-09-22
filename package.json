@@ -26,7 +26,8 @@
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "secretlint": "npx secretlint '**/*'",
     "audit": "better-npm-audit audit -p",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint-staged": "npx lint-staged"
   },
   "eslintConfig": {
     "extends": [
