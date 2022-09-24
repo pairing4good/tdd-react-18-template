@@ -8,7 +8,7 @@ This starter template bootstraps your repository with: recommended coding standa
 
 ### Code Analysis
 
-This template uses [ESLint](https://eslint.org/) to analyze the code in this repository. [ESLint](https://eslint.org/) is configured in `.eslintrc.json` file at the root of the repository. This template leverages 6 plugins that provide fast feedback on coding best practices and common pitfalls.
+This template uses [ESLint](https://eslint.org/) to analyze the code in this repository. [ESLint](https://eslint.org/) is configured in the `.eslintrc.json` file at the root of the repository. This template leverages 6 plugins that provide fast feedback on coding best practices and common pitfalls.
 
 1. The default coding style guide was adopted from [Airbnb](https://github.com/airbnb/javascript)
 2. [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
@@ -25,13 +25,13 @@ If you are using [VSCode](https://code.visualstudio.com/) adding the ESLint (dba
 
 ### Credentials Check
 
-It's all too common for developers to accidentally commit usernames and or passwords int their repository. This can lead to significant security vulnerabilities and even lead to security breaches. [Secretlint](https://github.com/secretlint/secretlint) is a Pluggable linting tool that prevents developers from committing their credentials. [Secretlint](https://github.com/secretlint/secretlint) is configured in the `.secretlintrc.json` file at the root of this repository.
+It's all too common for developers to accidentally commit usernames and or passwords into their repository. This can lead to significant security vulnerabilities and even lead to security breaches. [Secretlint](https://github.com/secretlint/secretlint) is a Pluggable linting tool that prevents developers from committing their credentials. [Secretlint](https://github.com/secretlint/secretlint) is configured in the `.secretlintrc.json` file at the root of this repository.
 
 To run [Secretlint](https://github.com/secretlint/secretlint) run the command `npm run secretlint`.
 
 ### NPM Package Audit
 
-The `npm audit` command checks the dependencies configured in `package.json` for vulnerabilities. In rare circumstances some vulnerability need to be temporarily ignored while the open source library community works on a fix. Unfortunately `npm audit` does not provide this ability. However, the [better-npm-audit](https://github.com/jeemok/better-npm-audit) library does. The `.nsprc` file at the root of this repository configures temporary exceptions. If this need arises be sure to the [expiry](https://github.com/jeemok/better-npm-audit#using-nsprc-file-to-manage-exceptions) field to set a date when this vulnerability will be reevaluated by your team. **_ Avoid ignoring audit level [critical](https://docs.npmjs.com/cli/v8/commands/npm-audit#audit-level). These vulnerabilities should be addressed immediately. _**
+The `npm audit` command checks the dependencies configured in `package.json` for vulnerabilities. In rare circumstances some vulnerabilities need to be temporarily ignored while the open source library community works on a fix. Unfortunately `npm audit` does not provide this ability. However, the [better-npm-audit](https://github.com/jeemok/better-npm-audit) library does. The `.nsprc` file at the root of this repository configures temporary exceptions. If this need arises be sure to the [expiry](https://github.com/jeemok/better-npm-audit#using-nsprc-file-to-manage-exceptions) field to set a date when this vulnerability will be reevaluated by your team. **_ Avoid ignoring audit level [critical](https://docs.npmjs.com/cli/v8/commands/npm-audit#audit-level). These vulnerabilities should be addressed immediately. _**
 
 ### Reformatting Code
 
@@ -41,15 +41,15 @@ The `npm audit` command checks the dependencies configured in `package.json` for
 
 Test automation is essential for longterm product health. Each test exercises the application and ensures that it behaves the way that the customer expects. As products grow it's not uncommon to have tens of thousands of [unit tests](https://martinfowler.com/bliki/UnitTest.html) that run in a few milliseconds. Beyond [unit tests](https://martinfowler.com/bliki/UnitTest.html) teams invest in [integration tests](https://martinfowler.com/bliki/IntegrationTest.html) and [user interface testing](https://martinfowler.com/bliki/TestPyramid.html). Teams that are committed to [test driving](https://en.wikipedia.org/wiki/Test-driven_development) code often write thoughtful tests that provide comprehensive product test coverage.
 
-Code coverage verification can be usful for teams to identify test coverage holes within their product. These thresholds simply identify if a line of code was exercised by a test. However, it cannot determine if the test coverage ise exercising the code in a meaningful way. Code coverage thresholds only identify test coverage gaps and should not be used as a substitute for a strong team culture of technical excellence.
+Code coverage verification can be useful for teams to identify test coverage holes within their product. These thresholds simply identify if a line of code was exercised by a test. However, it cannot determine if the test coverage ise exercising the code in a meaningful way. Code coverage thresholds only identify test coverage gaps and should not be used as a substitute for a strong team culture of technical excellence.
 
 This repository uses the [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). By default [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) is configured to use [Jest](https://jestjs.io/) under the hood. Within [Jest](https://jestjs.io/) [test coverage thresholds](https://jestjs.io/docs/configuration#coveragethreshold-object) are set in the `jest.config.js` file at the root of this repository.
 
 ### Checks Before Committing
 
-This template uses [Husky](https://typicode.github.io/husky) to verify the code before it is commited to [git](https://git-scm.com/). The `.husky/pre-commit` file is run before a `git commit` is completed. This file configures and runs coding style, test coverage, and security check verifications prior to commiting code to git.
+This template uses [Husky](https://typicode.github.io/husky) to verify the code before it is committed to [git](https://git-scm.com/). The `.husky/pre-commit` file is run before a `git commit` is completed. This file configures and runs coding style, test coverage, and security check verifications prior to committing code to git.
 
-In [git](https://git-scm.com/) only commits [staged](https://githowto.com/staging_and_committing) files. If [Husky](https://typicode.github.io/husky) reformatted all files whether they are [staged](https://githowto.com/staging_and_committing) or not, it would frequently change files that were not [staged](https://githowto.com/staging_and_committing) and would not be ultimatley committed. To solve this problem, [Husky](https://typicode.github.io/husky) uses the [lint-staged](https://github.com/okonet/lint-staged) library to only run formatting rules against staged files. The commands that are run with [lint-staged](https://github.com/okonet/lint-staged) library are configured in the `.lintstagedrc.json` file at the root of this repository.
+In [git](https://git-scm.com/) only commits [staged](https://githowto.com/staging_and_committing) files. If [Husky](https://typicode.github.io/husky) reformatted all files whether they are [staged](https://githowto.com/staging_and_committing) or not, it would frequently change files that were not [staged](https://githowto.com/staging_and_committing) and would not be ultimately committed. To solve this problem, [Husky](https://typicode.github.io/husky) uses the [lint-staged](https://github.com/okonet/lint-staged) library to only run formatting rules against staged files. The commands that are run with [lint-staged](https://github.com/okonet/lint-staged) library are configured in the `.lintstagedrc.json` file at the root of this repository.
 
 To run [lint-staged](https://github.com/okonet/lint-staged) run the command `npm run lint-staged`.
 
@@ -59,7 +59,7 @@ Before each commit [Husky](https://typicode.github.io/husky) runs 5 commands:
 2. `npm run test:coverage` - runs all the tests and checks the coverage threshold
 3. `npm run lint` - checks the code against all of the linting rules
 4. `npm run secretlint` - checks for secrets within the code
-5. `npm run audit` - checks for package vulnerabilites
+5. `npm run audit` - checks for package vulnerabilities
 
 # Initial Template Creation Steps
 
