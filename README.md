@@ -67,3 +67,10 @@ Before each commit [Husky](https://typicode.github.io/husky) runs 5 commands:
 3. `npm run lint` - checks the code against all of the linting rules
 4. `npm run secretlint` - checks for secrets within the code
 5. `npm run audit` - checks for package vulnerabilities
+
+### Continuious Integration Builds
+This template uses [GitHub Actions](https://docs.github.com/en/actions) to run [continuious integration](https://en.wikipedia.org/wiki/Continuous_integration) builds after each push to GitHub.
+
+- `.github/workflows/codeql-analysis.yml` sets up [code scanning](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning) for your repository.
+- `.github/workflows/node.js.yml` runs tests against your code.
+
