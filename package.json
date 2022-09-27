@@ -28,7 +28,8 @@
     "prepare": "husky install",
     "lint-staged": "npx lint-staged",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "cypress:test": "start-test 3000 cyperess:run"
   },
   "eslintConfig": {
     "extends": [
