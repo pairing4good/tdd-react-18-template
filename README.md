@@ -2,6 +2,13 @@
 
 ![Test Automation](https://github.com/pairing4good/react-18-project-template/actions/workflows/node.js.yml/badge.svg)
 
+## Usage
+
+- Click the `Use this template` button on the top right
+- Clone your new repository
+- Update the `name` of your application in the `package.json` file in the root of your repository
+- run `npm init`
+
 ## Approach
 
 This starter template bootstraps your repository with: recommended coding standards, industry best practices and it also detects security vulnerabilities before code is committed to git. This template provides fast automated testing feedback loops so teams can focus on solving problems.
