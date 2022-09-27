@@ -60,7 +60,7 @@ Code coverage verification can be useful for teams to identify test coverage hol
 
 This repository uses the [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). By default [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) is configured to use [Jest](https://jestjs.io/) under the hood. Within [Jest](https://jestjs.io/) [test coverage thresholds](https://jestjs.io/docs/configuration#coveragethreshold-object) are set in the `jest.config.js` file at the root of this repository.
 
-[Cypress](https://www.cypress.io/) tests are not included in code coverage metrics.  End-to-end full-stack integration tests often touch significant amounts of code without providing the level of coverage that thoughtful unit or integration tests, lower in the testing pyramid, provide.  While they serve a crutial role in wholistic testing, they do not contribute to test coverage calculations.
+[Cypress](https://www.cypress.io/) tests are not included in code coverage metrics.  End-to-end full-stack integration tests often touch significant amounts of code without providing the level of coverage that thoughtful unit or integration tests, lower in the testing pyramid, provide.  While they serve a crucial role in holistic testing, they do not contribute to test coverage calculations.
 
 ## Checks Before Committing
 
@@ -85,5 +85,3 @@ This template uses [GitHub Actions](https://docs.github.com/en/actions) to run [
 
 - `.github/workflows/codeql-analysis.yml` sets up [code scanning](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning) for your repository.
 - `.github/workflows/node.js.yml` runs tests against your code.
-
-
