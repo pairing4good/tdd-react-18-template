@@ -7,7 +7,7 @@
 - Click the `Use this template` button on the top right
 - Clone your new repository
 - Update the `name` of your application in the `package.json` file in the root of your repository
-- run `npm init`
+- run `npm install`
 
 ## Approach
 
