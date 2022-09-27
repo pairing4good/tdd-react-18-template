@@ -1,7 +1,5 @@
 ![Security Checks](https://github.com/pairing4good/react-18-project-template/actions/workflows/codeql-analysis.yml/badge.svg)
-
 ![Test Automation](https://github.com/pairing4good/react-18-project-template/actions/workflows/node.js.yml/badge.svg)
-
 ## Usage
 
 - Click the `Use this template` button on the top right
