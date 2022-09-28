@@ -8,6 +8,14 @@
 - Click on `Settings > Code security and analysis`
   - Enable `Dependabot alerts`
   - Enable `Dependabot security updates`
+- Update badges at the top of the `README.md` to point to your new repositories GitHub Action results
+
+```
+![Security Checks](https://github.com/{username}/{project name}/actions/workflows/codeql-analysis.yml/badge.svg)
+![React Tests](https://github.com/{username}/{project name}/actions/workflows/node.js.yml/badge.svg)
+![Cypress Tests](https://github.com/{username}/{project name}/actions/workflows/cypress.yml/badge.svg)
+```
+
 - [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your new repository
 - Update the `name` of your application in the `package.json` file in the root of your repository
 - Run `npm install`
