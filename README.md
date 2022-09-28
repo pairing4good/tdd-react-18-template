@@ -5,13 +5,16 @@
 ## Usage
 
 - Click the `Use this template` button on the top right
-- Clone your new repository
+- Click on `Settings > Code security and analysis`
+  - Enable `Dependabot alerts`
+  - Enable `Dependabot security updates`
+- [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your new repository
 - Update the `name` of your application in the `package.json` file in the root of your repository
-- run `npm install`
+- Run `npm install`
 
 ## Approach
 
-This starter template bootstraps your repository with: recommended coding standards, industry best practices and it also detects security vulnerabilities before code is committed to git. This template provides fast automated testing feedback loops so you can focus on solving problems.
+This starter template bootstraps your repository with coding standards, industry best practices and detects security vulnerabilities. This template provides fast code analysis and automated testing feedback loops so you can focus on solving problems.
 
 ## Code Analysis
 
@@ -41,7 +44,7 @@ To run [Secretlint](https://github.com/secretlint/secretlint) run the command `n
 
 ## NPM Package Audit
 
-The `npm audit` command checks the dependencies configured in `package.json` for vulnerabilities. In rare circumstances some vulnerabilities need to be temporarily ignored while the open source library community works on a fix. Unfortunately `npm audit` does not provide this ability. However, the [better-npm-audit](https://github.com/jeemok/better-npm-audit) library does. The `.nsprc` file at the root of this repository configures temporary exceptions. If this need arises be sure to use the [expiry](https://github.com/jeemok/better-npm-audit#using-nsprc-file-to-manage-exceptions) field to set a date when this vulnerability will be reevaluated by your team. **Avoid ignoring audit level [critical](https://docs.npmjs.com/cli/v8/commands/npm-audit#audit-level) vulnerabilities. These vulnerabilities should be addressed immediately. **
+The `npm audit` command checks the dependencies configured in `package.json` for vulnerabilities. In rare circumstances some vulnerabilities need to be temporarily ignored while the open source library community works on a fix. Unfortunately `npm audit` does not provide this ability. However, the [better-npm-audit](https://github.com/jeemok/better-npm-audit) library does. The `.nsprc` file at the root of this repository configures temporary exceptions. If this need arises be sure to use the [expiry](https://github.com/jeemok/better-npm-audit#using-nsprc-file-to-manage-exceptions) field to set a date when this vulnerability will be reevaluated by your team. **Avoid ignoring audit level [critical](https://docs.npmjs.com/cli/v8/commands/npm-audit#audit-level) vulnerabilities. These vulnerabilities should be addressed immediately.**
 
 ## Reformatting Code
 
@@ -58,9 +61,9 @@ Test automation is essential for longterm product health. Each test exercises th
 
 Code coverage verification can be useful for teams to identify test coverage holes within their product. These thresholds simply identify if a line of code was exercised by a test. However, it cannot determine if the test coverage is exercising the code in a meaningful way. Code coverage thresholds only identify test coverage gaps and should not be used as a substitute for a strong team culture of [test driving](https://en.wikipedia.org/wiki/Test-driven_development) code.
 
-This repository uses the [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). By default [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) is configured to use [Jest](https://jestjs.io/) under the hood. Within [Jest](https://jestjs.io/) [test coverage thresholds](https://jestjs.io/docs/configuration#coveragethreshold-object) are set in the `jest.config.js` file at the root of this repository.
+This repository uses the [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). By default [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) is configured to use [Jest](https://jestjs.io/) under the hood. Within [Jest](https://jestjs.io/), [test coverage thresholds](https://jestjs.io/docs/configuration#coveragethreshold-object) are set in the `jest.config.js` file at the root of this repository.
 
-[Cypress](https://www.cypress.io/) tests are not included in code coverage metrics.  End-to-end full-stack integration tests often touch significant amounts of code without providing the level of coverage that thoughtful unit or integration tests, lower in the testing pyramid, provide.  While they serve a crucial role in holistic testing, they do not contribute to test coverage calculations.
+[Cypress](https://www.cypress.io/) tests are not included in code coverage metrics.  End-to-end, full-stack integration tests often touch significant amounts of code without providing the level of coverage that thoughtful unit or integration tests provide lower in the testing pyramid.  While they serve a crucial role in holistic testing, they don't contribute to test coverage calculations.
 
 ## Checks Before Committing
 
@@ -70,7 +73,7 @@ This template uses [Husky](https://typicode.github.io/husky) to verify the code 
 
 To run [lint-staged](https://github.com/okonet/lint-staged) run the command `npm run lint-staged`.
 
-Before each commit [Husky](https://typicode.github.io/husky) runs 5 commands:
+Before each commit, [Husky](https://typicode.github.io/husky) runs 5 commands:
 
 1. `npm run lint-staged` - automatically fixes all the linting rules that can be auto-resolved and reformatts files with Prettier
 2. `npm run test:coverage` - runs all the tests and checks the coverage threshold
@@ -85,3 +88,4 @@ This template uses [GitHub Actions](https://docs.github.com/en/actions) to run [
 
 - `.github/workflows/codeql-analysis.yml` sets up [code scanning](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning) for your repository.
 - `.github/workflows/node.js.yml` runs tests against your code.
+- `.github/workflows/cypress.yml` runs cypress tests against your code.
