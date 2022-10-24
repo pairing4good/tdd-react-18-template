@@ -50,10 +50,6 @@ It's all too common for developers to accidentally commit usernames and or passw
 
 To run [Secretlint](https://github.com/secretlint/secretlint) run the command `npm run secretlint`.
 
-## NPM Package Audit
-
-The `npm audit` command checks the dependencies configured in `package.json` for vulnerabilities. In rare circumstances some vulnerabilities need to be temporarily ignored while the open source library community works on a fix. Unfortunately `npm audit` does not provide this ability. However, the [better-npm-audit](https://github.com/jeemok/better-npm-audit) library does. The `.nsprc` file at the root of this repository configures temporary exceptions. If this need arises be sure to use the [expiry](https://github.com/jeemok/better-npm-audit#using-nsprc-file-to-manage-exceptions) field to set a date when this vulnerability will be reevaluated by your team. **Avoid ignoring audit level [critical](https://docs.npmjs.com/cli/v8/commands/npm-audit#audit-level) vulnerabilities. These vulnerabilities should be addressed immediately.**
-
 ## Reformatting Code
 
 [ESLint](https://eslint.org/)'s auto fix command reformats your files to fit the configured [ESLint](https://eslint.org/) rules. [Prettier](https://prettier.io/) provides configurable coding style rules. [Prettier](https://prettier.io/) rules are configured in the `.prettierrc` file at the root of this repository. By running the command `npm run lint:fix` the [Prettier](https://prettier.io/) rules will be included in the [ESLint](https://eslint.org/) formatting rules. It's important that teams have clear coding standards and libraries like [Prettier](https://prettier.io/) can help teams configure and adhere to their own standards.
