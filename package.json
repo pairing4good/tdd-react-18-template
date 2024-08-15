@@ -27,9 +27,9 @@
     "audit": "npm audit --production",
     "prepare": "husky install",
     "lint-staged": "npx lint-staged",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
-    "cypress:test": "BROWSER=none start-test http://127.0.0.1:3000 'cypress run'"
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run",
+    "cypress:test": "BROWSER=none start-test http://127.0.0.1:3000 'npx cypress run'"
   },
   "eslintConfig": {
     "extends": [
