@@ -21,6 +21,7 @@
       }
     }
   ],
+  "ignorePatterns": ["build/*"],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
